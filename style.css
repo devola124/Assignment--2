@@ -443,7 +443,39 @@ footer{
     .footer-section{
         flex-direction: column;
         gap: 30px;
-        padding: 10px 15px;
+        padding: 60px 15px;
+    }
+    .footer-logo .div-2{
+        width: 100%;
+        font-size: 0.9rem;
+        line-height: 23px;
+    }
+    .footer-logo{
+        gap: 15px;
+    }
+    .footer-logo h3{
+        font-size: 2.2rem;
+    }
+    .footer-menu ul li{
+        line-height: 35px;
+    }
+    .footer-menu ul li a{
+        font-size: 1rem; 
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .banner-tittle{
+        font-size: 1.9rem;
+        line-height: 50px;
+    }
+    .container-content{
+        padding: 10px 10px;
+        text-align: center;
+        margin-top: -35px;
+    }
+    .container-content h4{
+        font-size: 1rem;
     }
 }
 
