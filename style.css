@@ -440,5 +440,10 @@ footer{
 
     /* footer-part */
 
+    .footer-section{
+        flex-direction: column;
+        gap: 30px;
+        padding: 10px 15px;
+    }
 }
 
