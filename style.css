@@ -72,6 +72,11 @@ nav{
     font-weight: bold;
     line-height: 30px;
 }
+.responsive-navbar{
+    display: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
 /* Nav-Menu */
 
 .nav-menu ul{
@@ -340,5 +345,23 @@ footer{
 }
 .footer-icons h4{
     color: #fff;
+}
+
+
+.hide{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    
+    nav{
+        padding: 10px 15px;
+        border-bottom: 1px solid rgba(254, 163, 1, 1);
+    }
+    .responsive-navbar{
+        display: block;
+    }
+    .nav-logo h3, .nav-menu, .nav-btn{
+        display: none;
+    }
 }
 
