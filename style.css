@@ -464,7 +464,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 400px) {
     .banner-tittle{
         font-size: 1.9rem;
         line-height: 50px;
