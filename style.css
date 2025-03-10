@@ -60,6 +60,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0px;
 }
 .nav-logo{
     display: flex;
@@ -133,7 +134,7 @@ nav{
 /* Standard-Section */
 
 .standard-section{
-    padding: 60px 0px;
+    padding: 60px 0px;     
     background-image: url(./assets/bg.png);
     background-repeat: no-repeat;
 }
@@ -158,15 +159,15 @@ nav{
     line-height: 28px;
 }
 .card-1{
-    background: linear-gradient(to bottom right, rgba(100, 200, 255, 0.3) 10%, transparent
+    background: linear-gradient(to bottom right, rgba(100, 200, 255, 0.3), whitesmoke
     );
 }
 .card-2{
-    background: linear-gradient(to bottom right, rgba(240, 170, 0, 0.3) 10%, transparent
+    background: linear-gradient(to bottom right, rgba(240, 170, 0, 0.3), whitesmoke
     );
 }
 .card-3{
-    background: linear-gradient(to bottom right, rgba(135, 0, 255, 0.3) 10%, transparent
+    background: linear-gradient(to bottom right, rgba(135, 0, 255, 0.3), whitesmoke
     );
 }
 .btn-1{
@@ -200,7 +201,7 @@ nav{
 
 
 main{
-    padding: 60px 0px;
+    padding: 50px 0px;
     background-image: url(./assets/bg.png);
     background-size: cover;
     background-position: bottom center;
@@ -220,7 +221,7 @@ main::before{
 }
 .our-stories-container{
    display: grid;
-   grid-template-columns: 40% 27% 27% ;
+   grid-template-columns: 40% 28% 28% ;
    grid-template-rows: repeat(2, 1fr);
    justify-content: space-between; 
    margin-top: 80px;
@@ -241,6 +242,7 @@ main::before{
 }
 .container-item img{
     width: 100%;
+    height: auto;
 }
 
 .container-content{
@@ -296,7 +298,6 @@ footer{
 .footer-section{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     padding: 100px 0px;
 }
 .footer-logo{
@@ -363,5 +364,81 @@ footer{
     .nav-logo h3, .nav-menu, .nav-btn{
         display: none;
     }
+
+    /* Banner Responsive */
+    .banner-tittle{
+        font-size: 2.5rem;
+        line-height: 55px;
+    }
+    .banner-content p {
+        line-height: 22px;
+    }
+    .btn-primary{
+        padding: 15px 30px;
+        font-size: 1.1rem;
+    }
+    .banner-section{
+        flex-direction: column-reverse;
+        gap: 25px;
+        text-align: center;
+        padding: 10px 15px;
+    }
+    .banner-section img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Standard Section */
+
+    .tittle{
+        font-size: 1.8rem;
+    }
+    .sub-tittle{
+        font-size: 1.4rem;
+    }
+    .standard-section{
+        padding: 10px 15px;
+    }
+    .standard-card{
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .card p{
+        font-size: 0.85rem;
+    }
+    .angel-bracket{
+        display: none;
+    }
+    
+    /* our stories responsive part */
+    .our-stories{
+        padding: 10px 15px;
+    }
+    .our-stories-container{
+        grid-template-columns: 48% 48%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .item-1{
+        display: none;
+    }
+    .item-4, .item-5{
+        display: block;
+    }
+    .container-item .container-content div button {
+        font-size: 0.65rem;
+    }
+    .container-content div button{
+        text-align: center;
+    }
+    .content-tittle{
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+
+    /* footer-part */
+
 }
 
